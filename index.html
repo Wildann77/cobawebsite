@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      <div class="brand"><h1>Ikan Bakar</h1></div>
+      <section class="brand"><h1>Ikan Bakar</h1></section>
       <nav>
         <ul>
           <li>home</li>
@@ -17,24 +17,68 @@
       </nav>
     </header>
 
-    <div class="content">
+    <main class="content">
       <div class="deks">
-        <img src="iwak.jpg" alt="" width="400px" />
-
+        <img src="iwak.jpg" alt="Ikan Bakar" width="400px" />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, corporis et cumque sunt modi eius ut explicabo itaque ab suscipit optio odio. Cupiditate labore modi numquam fuga ut dolorem!</p>
       </div>
-      <div class="service">
+
+      <section class="service">
         <h1>Layanan Kami</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quae delectus consequatur, vitae ex beatae voluptatem dignissimos, exercitationem in perspiciatis eveniet quod similique quo nobis at, commodi accusamus quos
-          assumenda!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quae delectus consequatur, vitae ex beatae voluptatem dignissimos, exercitationem in perspiciatis eveniet quod similique quo nobis at, commodi accusamus quos assumenda!
         </p>
-      </div>
-    </div>
+      </section>
+
+      <!-- Service/Menu Table -->
+      <section class="table-info">
+        <h2>Menu Layanan</h2>
+        <table border="1">
+          <thead >
+            <tr>
+              <th>Nama Layanan/Menu</th>
+              <th>Deskripsi Layanan/Menu</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr>
+              <td>Ikan Bakar Pedas Manis</td>
+              <td>Ikan bakar dengan saus pedas manis yang lezat.</td>
+              <td>Rp 50.000</td>
+            </tr>
+            <tr>
+              <td>Ikan Bakar Original</td>
+              <td>Ikan bakar dengan bumbu khas yang menggugah selera.</td>
+              <td>Rp 45.000</td>
+            </tr>
+            <tr>
+              <td>Ikan Bakar Bumbu Rujak</td>
+              <td>Ikan bakar dengan bumbu rujak pedas.</td>
+              <td>Rp 55.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Contact Us Form -->
+      <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Nama:</label><br />
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="message">Pesan:</label><br />
+          <textarea id="message" name="message" rows="4" required></textarea><br /><br />
+          <button type="submit">Kirim</button>
+        </form>
+      </section>
+    </main>
 
     <footer>
-      <span> nama bisnis : ikan bakar | </span>
-      <span> copyright 2018 </span>
+      <span>nama bisnis: ikan bakar | </span>
+      <span>copyright 2018</span>
     </footer>
   </body>
 </html>
