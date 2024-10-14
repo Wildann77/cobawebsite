@@ -4,10 +4,110 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ikan Bakar</title>
+    <style>
+      header {
+        background-color: #ff5733; /* Warna latar belakang header */
+        color: white;
+        padding: 20px;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 15px;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 10px 0;
+        text-align: left;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+      }
+
+      .deks img {
+        margin-left: 30%;
+        padding-top: 30px;
+      }
+
+      /* Styling Tabel */
+      table {
+        width: 100%;
+        margin: 20px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ff5733;
+        color: white;
+      }
+
+      input,
+      textarea {
+        width: 80%;
+        padding: 10px;
+        margin: 10px 0;
+      }
+
+      button {
+        background-color: #ff5733;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+      }
+
+      /* Styling Card Produk */
+      .product-list {
+        margin: 20px 0;
+      }
+
+      .product-card {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+        text-align: center;
+        padding: 15px;
+      }
+
+      .product-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .product-card h3 {
+        margin: 10px 0;
+        font-size: 1.25rem;
+      }
+
+      .product-card p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <section class="brand"><h1>Ikan Bakar</h1></section>
+      <section class="brand">
+        <h1>Ikan Bakar</h1>
+      </section>
       <nav>
         <ul>
           <li>home</li>
@@ -19,14 +119,15 @@
 
     <main class="content">
       <div class="deks">
-        <img src="iwak.jpg" alt="Ikan Bakar" width="400px" />
+        <img src="iwak.jpg" alt="Ikan Bakar" />
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod error, corporis et cumque sunt modi eius ut explicabo itaque ab suscipit optio odio. Cupiditate labore modi numquam fuga ut dolorem!</p>
       </div>
 
       <section class="service">
         <h1>Layanan Kami</h1>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quae delectus consequatur, vitae ex beatae voluptatem dignissimos, exercitationem in perspiciatis eveniet quod similique quo nobis at, commodi accusamus quos assumenda!
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe quae delectus consequatur, vitae ex beatae voluptatem dignissimos, exercitationem in perspiciatis eveniet quod similique quo nobis at, commodi accusamus quos
+          assumenda!
         </p>
       </section>
 
@@ -34,14 +135,14 @@
       <section class="table-info">
         <h2>Menu Layanan</h2>
         <table border="1">
-          <thead >
+          <thead>
             <tr>
               <th>Nama Layanan/Menu</th>
               <th>Deskripsi Layanan/Menu</th>
               <th>Harga</th>
             </tr>
           </thead>
-          <tbody >
+          <tbody>
             <tr>
               <td>Ikan Bakar Pedas Manis</td>
               <td>Ikan bakar dengan saus pedas manis yang lezat.</td>
@@ -60,6 +161,14 @@
           </tbody>
         </table>
       </section>
+      <!-- Komponen Card Produk -->
+      <section class="product-list">
+        <div class="product-card">
+          <img src="iwak.jpg" alt="Ikan Bakar Pedas Manis" />
+          <h3>Ikan Bakar Pedas Manis</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero veritatis ipsa quod recusandae!</p>
+        </div>
+      </section>
 
       <!-- Contact Us Form -->
       <section class="contact-form">
@@ -77,8 +186,8 @@
     </main>
 
     <footer>
-      <span>nama bisnis: ikan bakar | </span>
-      <span>copyright 2018</span>
+      <span>Nama bisnis: Ikan Bakar | </span>
+      <span>Copyright 2018</span>
     </footer>
   </body>
 </html>
