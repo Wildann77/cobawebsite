@@ -5,42 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ikan Bakar</title>
     <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+      }
+
       header {
         background-color: #ff5733; /* Warna latar belakang header */
         color: white;
         padding: 20px;
       }
 
+      /* Flexbox Navbar */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       nav ul {
         list-style: none;
+        display: flex;
+        gap: 15px;
         padding: 0;
       }
 
       nav ul li {
-        margin-right: 15px;
         font-weight: bold;
       }
 
-      p {
-        margin: 10px 0;
-        text-align: left;
+      nav ul li a {
+        color: white;
+        text-decoration: none;
       }
 
-      p {
-        font-size: 1rem;
-        line-height: 1.5;
-        padding: 0 10px;
+      /* Main Content */
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 20px;
+      }
+
+      .deks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
       }
 
       .deks img {
-        margin-left: 30%;
-        padding-top: 30px;
+        width: 50%;
+        height: auto;
+      }
+
+      .deks p {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 50%;
+        padding: 0 20px;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 768px) {
+        .deks {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .deks img {
+          width: 100%;
+          margin: 20px 0;
+        }
+
+        .deks p {
+          width: 100%;
+        }
       }
 
       /* Styling Tabel */
+      section.table-info {
+        background-color: #ff5733;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+      }
+
       table {
         width: 100%;
         margin: 20px 0;
+        background-color: white;
       }
 
       th,
@@ -55,23 +113,12 @@
         color: white;
       }
 
-      input,
-      textarea {
-        width: 80%;
-        padding: 10px;
-        margin: 10px 0;
-      }
-
-      button {
-        background-color: #ff5733;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-      }
-
-      /* Styling Card Produk */
+      /* Product Cards */
       .product-list {
-        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-wrap: nowrap; /* Ensure cards are in one row */
       }
 
       .product-card {
@@ -80,10 +127,9 @@
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 300px;
-        height: 300px;
-        margin: 10px;
         text-align: center;
         padding: 15px;
+        margin: 10px;
       }
 
       .product-card img {
@@ -101,6 +147,14 @@
         font-size: 0.9rem;
         color: #555;
       }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ff5733;
+        color: white;
+      }
     </style>
   </head>
   <body>
@@ -109,10 +163,11 @@
         <h1>Ikan Bakar</h1>
       </section>
       <nav>
+        <h2>Ucup Company</h2>
         <ul>
-          <li>home</li>
-          <li>about</li>
-          <li>contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -161,11 +216,22 @@
           </tbody>
         </table>
       </section>
+
       <!-- Komponen Card Produk -->
       <section class="product-list">
         <div class="product-card">
           <img src="iwak.jpg" alt="Ikan Bakar Pedas Manis" />
           <h3>Ikan Bakar Pedas Manis</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero veritatis ipsa quod recusandae!</p>
+        </div>
+        <div class="product-card">
+          <img src="iwak.jpg" alt="Ikan Bakar Original" />
+          <h3>Ikan Bakar Original</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero veritatis ipsa quod recusandae!</p>
+        </div>
+        <div class="product-card">
+          <img src="iwak.jpg" alt="Ikan Bakar Bumbu Rujak" />
+          <h3>Ikan Bakar Bumbu Rujak</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero veritatis ipsa quod recusandae!</p>
         </div>
       </section>
